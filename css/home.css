@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2, h3, h4, a {
+    color: black;
+}
+a:hover {
+    color: black;
+}
+
+#cadastro {
+    display: flex;
+}
+a img {
+    width: 60px;
+    margin-right: 10px;
+}
+.btn-outline-dark {
+    background-color: white;
+}
+.btn-outline-dark:hover {
+    background-color: #F9B5FF;
+    color: black;
+}
+
+#body-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#body-center > div {
+    width: 90%;
+}
+
+.carousel-item {
+    overflow: hidden;
+    height: 350px;
+}
+
+.row {
+    margin: 100px 0;
+}
+.col-sm-6 {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    border: none;
+    border-radius: 2em;
+    overflow: hidden;
+    background-color: #F949FF;
+    margin-top: 20px;
+}
+.card-body {
+    border-radius: 2em;
+    padding: 30px;
+}
+
+#accordionExample {
+    margin: 100px 0;
+}
+.accordion-item {
+    border: none;
+    margin-bottom: 8px;
+    border-radius: 2em;
+}
+.accordion-button {
+    background-color: #778AFF;
+    padding: 20px;
+    border-radius: 2em;
+}
+.accordion-button:hover {
+    background-color: #7C75FF;
+    color: black;
+}
+.accordion-button:active {
+    background-color: #778AFF;
+}
+
+.txt-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 100px;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #50A3FF, #F949FF) 1 100%;
+    padding: 20px 0;
+}
+.txt-img div {
+    width: 40%;
+    line-height: 30px;
+}
+.txt-img div h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+    background-color: #B5EDFF;
+    text-align: center;
+    border-radius: 0 20px;
+}
+.txt-img img {
+    width: 40%;
+    height: auto;
+}
+
+footer {
+    background-color: #50A3FF;
+}
+footer > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 40px 0;
+}
+#footer {
+    width: 70%;
+}
+#footer-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+#footer-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+h4 + section, h4 + section + section {
+    margin-top: 20px;
+}
+
+#footer + div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card + form {
+    background-color: #99E9DF;
+    border-radius: 2em;
+    padding: 20px;
+}
+.card > img {
+    height: 150px;
+}
+.form-control, .form-check-input, .enviar {
+    background-color: #CCF4EF;
+}
+.card-header {
+    background-color: #CCF4EF;
+}
+.border-dark {
+    width: 100%;
+    background-color: #99E9DF;
+}
+#redes-sociais {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+#redes-sociais>div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 10px;
+}
+svg {
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+svg:hover {
+    transform: scale(1.25);
+}
+
+@media screen and (max-width: 950px) {
+    #footer {
+        width: 100%;
+    }
+    #footer + div {
+        width: 70%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 821px) {
+    .txt-img img {
+        width: 70%;
+        height: auto;
+    }
+    .txt-img div {
+        width: 70%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #footer + div {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    #footer-section {
+        flex-direction: column;
+    }
+    div + section {
+        margin-top: 20px;
+    } 
+    #footer + div {
+        flex-direction: column;
+    }
+    .card + form {
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .txt-img img, .txt-img div {
+        width: 90%;
+    }
+
+    #footer + div {
+        width: 100%;
+    }
+}
