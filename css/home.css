@@ -228,6 +228,10 @@ svg:hover {
 }
 
 @media screen and (max-width: 375px) {
+    .col-sm-6 .card {
+        background-color: #F9B5FF;
+    }
+
     .txt-img img, .txt-img div {
         width: 90%;
     }
